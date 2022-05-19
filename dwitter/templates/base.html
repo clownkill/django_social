@@ -2,17 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <title>Dwitter</title>
 </head>
 <body>
-    <section>
-        <h1>Dwitter</h1>
-        <p>Your tiny social network built with Django</p>
+    <section class="hero is-small is-success mb-4">
+        <div class="hero-body">
+            <h1>Dwitter</h1>
+            <p>Your tiny social network built with Django</p>
+        </div>
     </section>
-    <div>
-        {% block content %}
-
-        {% endblock content %}
+    <div class="container">
+        <div class="columns">
+            {% block content %}
+    
+            {% endblock content %}
+        </div>
     </div>
 </body>
 </html>
